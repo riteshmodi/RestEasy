@@ -5,10 +5,10 @@
 	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 	<display-name>Restful Web Application</display-name>
  
-  <context-param> 
-    <param-name>javax.ws.rs.core.Application</param-name>
-    <param-value>com.sample.rest.MessageRestServiceApplication</param-value>
-  </context-param>
+   	<context-param> 
+	  	<param-name>javax.ws.rs.core.Application</param-name>
+    	  	<param-value>com.sample.rest.MessageRestServiceApplication</param-value>
+  	</context-param>
   
   <!--http://stackoverflow.com/questions/6953516/deploying-a-jersey-webapp-on-jboss-as-7 
   <context-param>
@@ -16,16 +16,15 @@
     <param-value>true</param-value>
   </context-param> 
   this is giving org.jboss.as.server.deployment.DeploymentUnitProcessingException: JBAS011232: Only one JAX-RS Application Class allowed. -->
-  
-	<context-param>
+  	<context-param>
 		<param-name>resteasy.resources</param-name>
 		<param-value>com.wordnik.swagger.jaxrs.listing.ApiListingResourceJSON</param-value>
-	</context-param>
+ 	</context-param>
  
- <context-param>
-    <param-name>resteasy.providers</param-name>
-    <param-value>com.sample.rest.JacksonJsonProvider</param-value>
-  </context-param>
+ 	<context-param>
+    		<param-name>resteasy.providers</param-name>
+    		<param-value>com.sample.rest.JacksonJsonProvider</param-value>
+  	</context-param>
  
 	<listener>
 		<listener-class>org.jboss.resteasy.plugins.server.servlet.ResteasyBootstrap</listener-class>
@@ -46,17 +45,17 @@
 	</servlet-mapping>
 	
 	<servlet>
-  	<servlet-name>DefaultJaxrsConfig</servlet-name>
-  	<servlet-class>com.wordnik.swagger.jaxrs.config.DefaultJaxrsConfig</servlet-class>
-  	<init-param>
-    	<param-name>api.version</param-name>
-    	<param-value>1.0.0</param-value>
-  	</init-param>
-  	<init-param>
-    	<param-name>swagger.api.basepath</param-name>
-    	<param-value>http://localhost:8080/RestEasy-1</param-value>
-  	</init-param>
-  	<load-on-startup>2</load-on-startup>
+  		<servlet-name>DefaultJaxrsConfig</servlet-name>
+  		<servlet-class>com.wordnik.swagger.jaxrs.config.DefaultJaxrsConfig</servlet-class>
+  		<init-param>
+    			<param-name>api.version</param-name>
+    			<param-value>1.0.0</param-value>
+  		</init-param>
+  		<init-param>
+    			<param-name>swagger.api.basepath</param-name>
+    			<param-value>http://localhost:8080/RestEasy-1</param-value>
+  		</init-param>
+  		<load-on-startup>2</load-on-startup>
 	</servlet>
  
 </web-app>
