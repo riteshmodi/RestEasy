@@ -23,7 +23,7 @@
  
  	<context-param>
     		<param-name>resteasy.providers</param-name>
-    		<param-value>com.sample.rest.JacksonJsonProvider,com.wordnik.swagger.jaxrs.listing.ApiDeclarationProvider,com.wordnik.swagger.jaxrs.listing.ResourceListingProvider</param-value>
+    		<param-value>com.wordnik.swagger.jaxrs.listing.ApiDeclarationProvider,com.wordnik.swagger.jaxrs.listing.ResourceListingProvider</param-value>
   	</context-param>
  
 	<listener>
