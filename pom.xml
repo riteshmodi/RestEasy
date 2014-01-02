@@ -133,7 +133,7 @@
 			<configuration>
 				<webXml>src\main\webapp\WEB-INF\web.xml</webXml>
 				<packagingExcludes>**/web.xml</packagingExcludes>
-				<outputDirectory>/home/cyber/jboss-as-7.1.1.Final/standalone/deployments</outputDirectory>
+				<!--<outputDirectory>/home/cyber/jboss-as-7.1.1.Final/standalone/deployments</outputDirectory>-->
 			</configuration>
 		</plugin>
 	</plugins>
