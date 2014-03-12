@@ -17,6 +17,7 @@ public class MessageRestServiceApplication extends Application {
 	      singletons.add(new MessageRestService());
 	   }
 
+	   //register provider here like exceptionhandler in resteasy
 	   @Override
 	   public Set<Class<?>> getClasses()
 	   {
